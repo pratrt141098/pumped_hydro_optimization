@@ -18,7 +18,7 @@ For **June 24, 2025**, the optimizer finds a total revenue of **\$2,318,210**.
 │   ├── fetch_data.py          Step 1: fetch all four endpoints, merge, save CSV
 │   └── optimize_dispatch.py   Step 2: load prices, optimize, verify, plot
 ├── notebooks/
-│   └── 03_submission_writeup.ipynb   Full technical writeup with figures
+│   └── summary_writeup.ipynb   Full technical writeup with figures
 ├── data/                      Output CSVs (prices + schedule)
 └── figures/                   Output PNGs
 ```
@@ -43,7 +43,7 @@ python scripts/fetch_data.py
 python scripts/optimize_dispatch.py
 
 # Optional — re-execute the writeup notebook end-to-end
-python -m nbconvert --to notebook --execute --inplace notebooks/03_submission_writeup.ipynb
+python -m nbconvert --to notebook --execute --inplace notebooks/summary_writeup.ipynb
 ```
 
 Both scripts print sanity-check results and a summary table to stdout. The notebook embeds the same content plus inline figures.
